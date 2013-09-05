@@ -66,7 +66,3 @@ cp config-example.js config.js
 
 npm install
 
-cp upstart/stagecoach.conf /etc/init
-
-start stagecoach
-
