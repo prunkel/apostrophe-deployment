@@ -1,14 +1,14 @@
 # Deploying Apostrophe Projects
 #### A step-by-step guide to server configuration
 
-At Punkave, we deploy our Apostrophe 2 sites using stagecoach. We typically go with a VPS from ServerGrove but lately have been experimenting with Digital Ocean. This guide is written with the following assumptions.
+At Punkave, our Apostrophe 2 sites use stagecoach as a local deployment tool and nginx as a revers proxy on our servers. We typically go with a VPS from ServerGrove but lately have been experimenting with Digital Ocean. This guide is written with the following assumptions:
 
-1. You are running some kind of VPS with Ubuntu SOMEVERSION to which you have root access
+1. You are running some kind of VPS with Ubuntu 12.04 x64 to which you have root access
 2. You have installed stagecoach in on your development machine (you can learn how do do that here: http://github.com/punkave/stagecoach)
 
 ## Local Setup
 
-In your development environment, you'll want to configure your deployment settings in the project's (aptly named) 'deployment' directory. This folder consists of start and stop scripts, a migrate task, an rsync_exclude, a .gitignore and some config files. Most of these should already exist if you started your project from the apostrophe-sandbox. If this is not the case, you'll want to set up a deployment directory at the root of your Apostrophe 2 project that mirrors the files in this repo.
+In your development environment, you'll want to configure your deployment settings in the project's (aptly named) 'deployment' directory. This folder consists of start and stop scripts, a migrate task, an rsync_exclude and some config files. Most of these should already exist if you started your project from the apostrophe-sandbox. If this is not the case, you'll want to set up a deployment directory at the root of your Apostrophe 2 project that mirrors the files in this repo.
 
 From the root directory of your project:
 ```
