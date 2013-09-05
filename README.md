@@ -76,7 +76,7 @@ $ ssh root@YOUR_SERVER_IP
 Enter your root password. Once you're logged in:
 
 ```
-$bash /opt/punk-ubuntu/configure-for-node.sh your_non_root_username
+$ bash /opt/punk-ubuntu/configure-for-node.sh your_non_root_username
 ```
 
 Above, where I say "your_non_root_username", I mean  to say "the ssh user you typically use to log in to your server". If you're on a Digital Ocean VPS, you will only have a root user so you'll have to create one before running the above command.
